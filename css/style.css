@@ -312,9 +312,6 @@ nav {
     text-align: center;
     width: 25px;
     height: 25px; }
-    #slider_zoom .icon_zoom i {
-      padding-left: 3px;
-      padding-right: 3px; }
 
 .gallery .previews, .gallery .full, .gallery .desc {
   margin-right: 10px; }
