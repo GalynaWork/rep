@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Limestone Digital test</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+</head>
+
+<body>
+<!--special offer-->
+<section class="special-offer">
+    <div class="sp-offer">
+
+        <p class="text-offer">Enter your email for $10 OFF instantly!
+            <a href="#" class="footnote" title="Footnote">*</a>
+        </p>
+        <input id="enterEmail" type="email" placeholder="Your email address"/>
+        <button type="button" id="emailBtn">Submit & Get $10 off</button>
+
+
+    </div>
+</section>
+<!--end special offer-->
+
+<!--header-->
+<header class="container-fluid">
+    <div class="header">
+        <nav>
+            <div class="header_menu">
+                <i class="fa fa-navicon" aria-hidden="true"></i>
+                <span>Menu</span>
+            </div>
+        </nav>
+        <div class="header_logo">
+            <a href="index.html">
+                <img src="images/logo_header_2min.png" alt="2 min club"/>
+            </a>
+
+        </div>
+        <div class="call_login">
+            <a href="tel:1‑844‑896‑6462">
+                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                <span class="call_order"> Call to order</span><span> 1‑844‑896‑6462</span>
+            </a>
+            <span class="line"> | </span>
+            <a href="#" class="login">login</a>
+            <div class="basket_header">
+                <i class="fa fa-cube" aria-hidden="true"></i>
+                <div class="basket_count"><span>0</span></div>
+            </div>
+        </div>
+        <div class="mobile_call">
+            <a href="tel:1‑844‑896‑6462">
+                <i class="fa fa-phone-square" aria-hidden="true"></i>
+
+            </a>
+        </div>
+
+    </div>
+</header>
+<!--end header-->
+
+<!--product description-->
+<section class="product_description container-fluid">
+
+    <div class="item_description">
+        <div class="row">
+            <div class="col-xs-5 col-sm-4">
+                <div class="container slider">
+                    <div class="clinically_proven">
+                        <img src="images/clinically-proven.png" alt="clinically proven" title="clinically proven"/>
+
+                    </div>
+                    <div class="slider_zoom" id="slider_zoom">
+                        <div class="icon_zoom">
+                            <i class="fa fa-plus" aria-hidden="true"></i></div>
+                        <span class="zoom_text">View More Images</span>
+
+                    </div>
+
+
+                    <div class="modal" id="modal-gallery" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" type="button" data-dismiss="modal">×</button>
+                                    <h3 class="modal-title"></h3>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="modal-carousel" class="carousel">
+
+                                        <div class="carousel-inner">
+                                        </div>
+
+                                        <a class="carousel-control left" href="#modal-carousel" data-slide="prev">
+                                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                        </a>
+                                        <a class="carousel-control right" href="#modal-carousel" data-slide="next">
+                                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery">
+                        <div class="full">
+                            <!-- first image is viewable to start -->
+                            <img src="images/footer_product.png" alt="Advanced Therapy System"/>
+                        </div>
+                        <div class="previews">
+                            <div class="item">
+                                <a id="image0" href="#" class="selected" data-full="images/footer_product.png">
+                                    <img alt="Advanced Therapy System" src="images/footer_product.png"/>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a id="image1" href="#" data-full="images/slider_product_2.png">
+                                    <img alt="Advanced Therapy System" src="images/slider_product_2.png"/>
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="right_side_description col-sm-8 col-xs-7">
+                <h1>Advanced Therapy System</h1>
+                <div class="product_stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <a href="#" title="Reviews" class="reviews">8709 Reviews</a>
+                </div>
+                <ul>
+                    <li>17 Key ACTIVE ingedients</li>
+                    <li>Revives damaged and distressed hair</li>
+                    <li>Supports healthy scalp, regenerates hair, and revitalizes follicles</li>
+                    <li>Adds body, increases volume, and thickens hair</li>
+                </ul>
+                <div>
+                    <p class="new_price">$39.99</p>
+                    <div class="show_old_price">
+                        <p class="old_price">Reg. <span>$59.99</span></p>
+                        <p class="saving">33% Savings!</p>
+                    </div>
+                    <button type="button" id="add_productBtn" class="add_productBtn">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end product description-->
+<!--other hair kits-->
+<section class="other_hair_kits container-fluid">
+    <h2>Other Hair Kits</h2>
+    <div class="row">
+        <div class="col-sm-6 col-xs-12 left_side">
+            <div class="first_hair_kits">
+                <a href="#" title="The Blue Kit">
+
+                    <div class="information_blue_kit">
+                        <h3>The Blue Kit</h3>
+                        <div class="product_stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <span>6385 Reviews</span>
+                        </div>
+                        <ul>
+                            <li>Basic hair loss prevention system</li>
+                            <li>15 key active ingredients</li>
+                            <li>Biotin encourages healthy, stronger hair</li>
+                            <li>Antioxidants keep hair healthy</li>
+                        </ul>
+                    </div>
+                    <div class="img_blue_kit">
+                        <img src="images/blue_kit.png" alt="The Blue Kit">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="second_hair_kits">
+                <a href="#" title="The Pro Kit">
+
+
+                    <div class="information_pro_kit">
+                        <h3>The Pro Kit</h3>
+                        <div class="product_stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <span>507 Reviews</span>
+                        </div>
+                        <ul>
+                            <li>Maximum strength system</li>
+                            <li>18 key active ingredients</li>
+                            <li>Red Korean Seaweed Extract supports stronger healthier hair</li>
+                        </ul>
+                    </div>
+                    <div class="img_pro_kit">
+                        <img src="images/pro_kit.png" alt="The Pro Kit">
+                    </div>
+                    <div class="promo_text">Limited Time <br>Offer</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<!--end other hair kits-->
+<section class="advantage_statistics container-fluid">
+    <div>
+        <h2>After using for 2 Minutes at a time, percent experienced improvement of the following to their hair:</h2>
+        <div class="col-sm-6 statistics_left_side">
+            <div class="statistics_item">
+                <p>Stronger Feeling Hair</p>
+                <div class="statistics_progress">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="81"
+                             aria-valuemin="0" aria-valuemax="100" style="width:81%">
+
+                        </div>
+
+                    </div>
+                    <span class="percent">81%</span>
+                </div>
+            </div>
+            <div class="statistics_item">
+                <p>Thicker Feeling Hair</p>
+                <div class="statistics_progress">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="81"
+                             aria-valuemin="0" aria-valuemax="100" style="width:81%">
+
+                        </div>
+                    </div>
+                    <span class="percent">81%</span>
+                </div>
+            </div>
+            <div class="statistics_item">
+                <p>Shinier Looking Hair</p>
+                <div class="statistics_progress">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="83"
+                             aria-valuemin="0" aria-valuemax="100" style="width:83%">
+
+                        </div>
+                    </div>
+                    <span class="percent">83%</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 statistics_right_side">
+            <div>
+                <div class="statistics_item">
+                    <p>Improved Healthy Appearance of Hair</p>
+                    <div class="statistics_progress">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="88"
+                                 aria-valuemin="0" aria-valuemax="100" style="width:88%">
+
+                            </div>
+                        </div>
+                        <span class="percent">88%</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="statistics_item">
+                    <p>Hair had More Body</p>
+                    <div class="statistics_progress">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="85"
+                                 aria-valuemin="0" aria-valuemax="100" style="width:85%">
+
+                            </div>
+                        </div>
+                        <span class="percent">85%</span></div>
+                </div>
+            </div>
+            <div>
+                <div class="statistics_item">
+                    <p>Healthier Feeling Condition of Scalp</p>
+                    <div class="statistics_progress">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="83"
+                                 aria-valuemin="0" aria-valuemax="100" style="width:83%">
+
+                            </div>
+                        </div>
+                        <span class="percent">83%</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="addition">*Based on results from independent expert graders from an 8 week clinical study. Subjects were
+        instructed to
+        allow shampoo to penetrate for <span>2 minutes</span> before rinsing and then follow with system
+        conditioner.</p>
+
+</section>
+<section class="video_part container-fluid">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="left_video">
+                <iframe src="https://www.youtube.com/embed/M_JfBTXbgBs" allowfullscreen></iframe>
+            </div>
+
+        </div>
+        <div class="col-sm-6">
+            <div class="right_video">
+                <iframe src="https://www.youtube.com/embed/P5kaQ6s3MCo" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<section class="three_steps container-fluid">
+    <div class="row">
+        <div class="col-sm-4 step1">
+            <img src="images/first_step.png" alt="first step" title="first step">
+            <p class="how_use">Gently massage <span>3-5 pumps</span><br>into hair and scalp.</p>
+
+
+        </div>
+        <div class="col-sm-4 step2">
+            <img src="images/second_step.png" alt="second step" title="second step">
+            <p class="how_use">Leave on <span>2-Minutes</span><br>for deep penetration.</p>
+
+        </div>
+        <div class="col-sm-4 step3">
+            <img src="images/third_step.png" alt="third step" title="third step">
+            <p class="how_use">Rinse</p>
+
+        </div>
+    </div>
+    <p class="additional_text">Repeat Steps 1-3 with your favourite <span>PURA D'OR</span> conditioner. <br>For best
+        results use
+        <span>daily</span>. Visible results after 3 month. Continue use thereafter.</p>
+
+</section>
+<section class="our_promise container-fluid">
+    <div class="row promise">
+
+        <p class="promise_text">Every product we offer delivers premium solutions while keeping the earth in mind. Our
+            goal is to be your
+            trusted
+            source for healthy and safe beauty solutions.</p>
+        <div class="col-sm-5 left_side">
+            <ul>
+                <li><img src="images/no_harmful_chemicals.png" title="No harmful chemicals" alt="No harmful chemicals"/>
+                    <p>No harmful chemicals</p>
+                </li>
+                <li><img src="images/no_parabens.png" title="No parabens" alt="No parabens"/>
+                    <p>No parabens</p>
+                </li>
+                <li><img src="images/no_artificial_colorants.png" title="No artificial colorants"
+                         alt="No artificial colorants"/>
+                    <p>No artificial colorants</p>
+                </li>
+                <li><img src="images/no_petrolatum.png" title="No petrolatum" alt="No petrolatum"/>
+                    <p>No petrolatum</p>
+                </li>
+            </ul>
+
+        </div>
+        <div class="col-sm-6">
+            <ul>
+                <li><img src="images/no_sulfates.png" title="No sulfates" alt="No sulfates"/>
+                    <p>No sulfates</p>
+                </li>
+                <li><img src="images/no-phthalates.png" title="No phthalates" alt="No phthalates"/>
+                    <p>No phthalates</p>
+                </li>
+                <li><img src="images/no_mineral_oil.png" title="No mineral oil" alt="No mineral oil"/>
+                    <p>No mineral oil</p>
+                </li>
+                <li><img src="images/no_common_allergens.png" title="No common allergens" alt="No common allergens"/>
+                    <p>No common allergens</p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</section>
+<!--footer-->
+<footer>
+    <div class="footer">
+        <img src="images/footer_product.png" alt="Advanced Therapy System" title="Advanced Therapy System"/>
+        <div class="text_about_product">
+            <h3>Advanced Therapy System</h3>
+            <div><p class="new_price">$29.99</p>
+                <p class="additional_text">&lt;&lt; 33% Savings <span>+ additional $10 OFF Price!</span></p>
+            </div>
+        </div>
+        <button id="footer_btn" type="button" class="footer_btn">Add to cart</button>
+    </div>
+</footer>
+<!--footer-->
+
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,1149 @@
+@charset "UTF-8";
+/*colors Sass */
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Futura-Bold";
+  src: url("../fonts/FuturaPT-Bold/FuturaPT-Bold.eot");
+  src: url("../fonts/FuturaPT-Bold/FuturaPT-Bold.eot") format("embedded-opentype"), url("../fonts/FuturaPT-Bold/FuturaPT-Bold.woff?v=4.7.0") format("woff"), url("../fonts/FuturaPT-Bold/FuturaPT-Bold.ttf") format("truetype"), url("../fonts/FuturaPT-Bold/FuturaPT-Bold.svg") format("svg");
+  font-weight: bold; }
+@font-face {
+  font-family: "Futura-Book";
+  src: url("../fonts/FuturaPT-Book/FuturaPT-Book.eot");
+  src: url("../fonts/FuturaPT-Book/FuturaPT-Book.eot") format("embedded-opentype"), url("../fonts/FuturaPT-Book/FuturaPT-Book.woff?v=4.7.0") format("woff"), url("../fonts/FuturaPT-Book/FuturaPT-Book.ttf") format("truetype"), url("../fonts/FuturaPT-Book/FuturaPT-Book.svg") format("svg");
+  font-weight: normal; }
+body {
+  font-size: 14px; }
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.fa-phone-square:before {
+  content: ""; }
+
+.fa-cube:before {
+  content: ""; }
+
+.fa-navicon:before {
+  content: ""; }
+
+.fa-star-half-o:before {
+  content: ""; }
+
+.fa-star:before {
+  content: ""; }
+
+.fa-chevron-right:before {
+  content: ""; }
+
+.fa-chevron-left:before {
+  content: ""; }
+
+.fa-plus:before {
+  content: "";
+  color: #90949c; }
+
+/*special-offer style */
+.special-offer {
+  width: 100%;
+  background-color: #1e2935;
+  text-align: center;
+  height: 51px; }
+  .special-offer .sp-offer {
+    /*for old version br */
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    height: 51px;
+    justify-content: center;
+    -webkit-justify-content: center; }
+  .special-offer p {
+    color: #ffffff;
+    display: inline-block;
+    font-family: "Futura-Bold", sans-serif;
+    font-size: 1.4em;
+    margin-bottom: 0;
+    margin-right: 16px;
+    letter-spacing: 0.01em; }
+  .special-offer .footnote {
+    color: #ff8106; }
+  .special-offer input {
+    outline: none;
+    border-radius: 4px;
+    line-height: normal;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -webkit-box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 0 15px;
+    width: 320px;
+    margin-right: 5px;
+    height: 30px;
+    color: #7b858e;
+    font-family: "Futura-Book", sans-serif;
+    font-size: 1.3em; }
+    .special-offer input::-webkit-input-placeholder {
+      color: #7b858e;
+      text-align: center;
+      font-family: "Futura-Book", sans-serif;
+      height: 30px; }
+    .special-offer input::-moz-placeholder {
+      color: #7b858e;
+      text-align: center;
+      font-family: "Futura-Book", sans-serif;
+      height: 30px; }
+    .special-offer input:-ms-input-placeholder {
+      color: #7b858e;
+      text-align: center;
+      font-family: "Futura-Book", sans-serif;
+      height: 30px; }
+    .special-offer input:-moz-placeholder {
+      color: #7b858e;
+      text-align: center;
+      font-family: "Futura-Book", sans-serif;
+      height: 30px; }
+
+#emailBtn {
+  background: #ff8106;
+  color: #ffffff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  transition: 450ms ease 0s;
+  width: 233px;
+  height: 30px;
+  font-family: "Futura-Bold", sans-serif;
+  font-size: 1.4em; }
+  #emailBtn:hover {
+    background-color: #d66a00; }
+
+/*end special-offer style */
+/*header style */
+header {
+  background: #ffffff;
+  height: 64px; }
+
+.header {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  height: 55px;
+  margin-bottom: 10px;
+  position: relative;
+  justify-content: space-between;
+  -webkit-justify-content: space-between; }
+  .header:before {
+    content: "";
+    width: 98%;
+    height: 1px;
+    background: #999999;
+    -webkit-box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto; }
+  .header a {
+    display: block; }
+
+.header_menu {
+  cursor: pointer;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  margin-left: 16px;
+  transition: 450ms ease 0s; }
+  .header_menu:hover .fa-navicon, .header_menu:hover span {
+    opacity: 0.7; }
+  .header_menu span {
+    color: #023c5a;
+    font-family: "Futura-Bold", sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-left: 11px; }
+  .header_menu .fa-navicon {
+    color: #023c5a;
+    font-size: 1.5em; }
+
+.mobile_call {
+  display: none; }
+
+.header_logo {
+  width: 145px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 10px; }
+  .header_logo img {
+    width: 145px; }
+
+.call_login {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  margin-right: 15px;
+  width: 100%;
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end; }
+  .call_login span {
+    color: #023c5a;
+    font-family: "Futura-Bold", sans-serif;
+    font-size: 1.15em;
+    text-transform: uppercase; }
+  .call_login .fa-phone-square, .call_login .fa-cube {
+    color: #023c5a; }
+  .call_login .fa-phone-square {
+    font-size: 1.25em; }
+  .call_login .fa-cube {
+    font-size: 2.1em; }
+
+.login {
+  color: #023c5a;
+  font-family: "Futura-Bold", sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  transition: 450ms ease 0s; }
+  .login:hover {
+    opacity: 0.7; }
+
+nav {
+  width: 100%; }
+
+.basket_header {
+  position: relative;
+  margin-left: 11px;
+  cursor: pointer;
+  margin-top: -3px; }
+  .basket_header span {
+    color: #ffffff;
+    background: #d4b86c;
+    border-radius: 20px;
+    padding: 0 4px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1em; }
+
+.line {
+  margin-right: 7px;
+  margin-left: 7px; }
+
+.basket_count {
+  position: absolute;
+  top: -11px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center; }
+
+/*end header style */
+/*slider product description */
+.slider {
+  padding-top: 20px;
+  padding-left: 65px;
+  position: relative;
+  max-width: 310px; }
+
+.slider-for img {
+  width: 195px;
+  border: none; }
+
+.slider-nav {
+  margin-top: 15px;
+  margin-left: 10px; }
+  .slider-nav img {
+    outline: none;
+    width: 52px;
+    padding: 4px; }
+
+.slick-slide {
+  width: 52px;
+  margin-top: 0px;
+  outline: none;
+  border: 1px solid #fff; }
+
+.slider-nav .slick-list .item.slick-slide:first-child {
+  margin-left: 11px;
+  border: 1px solid #000; }
+
+.thumbnail {
+  margin-bottom: 6px; }
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+  margin-top: 10%;
+  width: 5%; }
+
+.clinically_proven {
+  position: absolute;
+  top: 41px;
+  left: 5px;
+  z-index: 1; }
+
+#slider_zoom {
+  position: absolute;
+  bottom: 82px;
+  left: 43px;
+  cursor: pointer; }
+  #slider_zoom i {
+    border: 2px solid #90949c;
+    border-radius: 33px;
+    line-height: 19px;
+    text-align: center;
+    width: 25px;
+    height: 21px;
+    padding-left: 3px;
+    padding-right: 3px; }
+
+.gallery .previews, .gallery .full, .gallery .desc {
+  margin-right: 10px; }
+
+.gallery .desc, .gallery .full {
+  font-size: 12px; }
+
+.gallery .desc h2 {
+  margin-top: 0; }
+
+.gallery .previews a {
+  display: block;
+  margin-bottom: 10px;
+  margin-right: 10px; }
+
+.gallery .previews a:hover, .gallery .previews a.selected {
+  border: 1px solid #000; }
+
+.gallery .full img:hover {
+  cursor: pointer; }
+
+.full img {
+  width: 195px;
+  height: 247px; }
+
+.previews {
+  display: flex;
+  display: -webkit-flex;
+  margin-top: 23px;
+  margin-left: 11px; }
+  .previews a {
+    border: 1px solid #fff;
+    transition: 450ms ease 0s; }
+  .previews img {
+    width: 41px;
+    height: 53px;
+    margin: 3px; }
+
+.carousel-control {
+  opacity: 1; }
+  .carousel-control i {
+    color: #000;
+    opacity: 1;
+    text-shadow: none;
+    font-size: 1.4em; }
+
+.carousel-control.left {
+  margin-right: 15px;
+  margin-top: 230px; }
+
+.carousel-control.right {
+  margin-top: 230px;
+  margin-left: 15px; }
+
+.carousel-inner > .item > a > img {
+  margin: 0 auto;
+  max-width: 450px;
+  width: 100%; }
+
+.zoom_text {
+  display: none; }
+
+/*end slider product description */
+/*product description */
+.product_description {
+  background: #ffffff; }
+
+.item_description, .other_hair_kits, .advantage_statistics, .video_part, .three_steps, .our_promise {
+  max-width: 820px;
+  padding-top: 20px;
+  width: 100%;
+  margin: 0 auto; }
+
+.item_description .right_side_description {
+  padding-left: 63px; }
+  .item_description .right_side_description h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.2em;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: #333333;
+    margin-bottom: 6px; }
+  .item_description .right_side_description .reviews {
+    font-family: "Roboto", sans-serif;
+    color: #000;
+    text-decoration: underline;
+    transition: 450ms ease 0s; }
+    .item_description .right_side_description .reviews:hover {
+      text-decoration: none; }
+  .item_description .right_side_description ul {
+    margin-top: 6px;
+    margin-bottom: 8px; }
+    .item_description .right_side_description ul li {
+      font-family: "Futura-Book", sans-serif;
+      font-size: 1.3em;
+      line-height: 21px;
+      position: relative;
+      padding-left: 10px;
+      letter-spacing: 0.01em; }
+      .item_description .right_side_description ul li:before {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        border-radius: 4px;
+        background: #333333;
+        left: 1px;
+        top: 9px; }
+
+.product_stars {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center; }
+  .product_stars .fa-star, .product_stars .fa-star-half-o {
+    color: #f7941d;
+    font-size: 1.3em;
+    margin-right: 4px; }
+
+.new_price {
+  color: #ea3445;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+  float: left; }
+
+.show_old_price {
+  float: left;
+  margin-left: 19px;
+  margin-right: 50px; }
+
+.old_price {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  margin-bottom: 0;
+  margin-top: 4px; }
+  .old_price span {
+    text-decoration: line-through; }
+
+.add_productBtn {
+  outline: none;
+  background: #ea3445;
+  color: #ffffff;
+  width: 155px;
+  height: 45px;
+  border-radius: 23px;
+  border: none;
+  font-family: "Futura-Bold", sans-serif;
+  font-size: 1.1em;
+  transition: 450ms ease 0s; }
+  .add_productBtn:hover {
+    background: #cd4552; }
+
+.saving {
+  margin-top: -3px; }
+
+/*end product description */
+/*other hair kits */
+.other_hair_kits {
+  padding-bottom: 31px;
+  position: relative; }
+  .other_hair_kits:after {
+    content: "";
+    width: 95%;
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0;
+    background: #eee;
+    margin: auto; }
+  .other_hair_kits .left_side {
+    padding-left: 15px; }
+  .other_hair_kits a {
+    color: #000000; }
+  .other_hair_kits .fa-star, .other_hair_kits .fa-star-half-o {
+    font-size: 1.15em;
+    margin-right: 2px; }
+  .other_hair_kits h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    margin-left: 0px;
+    margin-bottom: 8px; }
+
+.first_hair_kits {
+  background: #e3f1f9;
+  border: 4px solid #9cc5dc;
+  transition: 450ms ease 0s; }
+  .first_hair_kits:hover {
+    background: #bddef1;
+    border: 4px solid #85adc4; }
+  .first_hair_kits a {
+    display: block; }
+  .first_hair_kits h3 {
+    color: #1d304a;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 4px; }
+
+.img_blue_kit {
+  float: right;
+  padding-top: 20px;
+  padding-right: 9px; }
+  .img_blue_kit img {
+    width: 80px; }
+
+.information_blue_kit, .information_pro_kit {
+  display: inline-block;
+  max-width: 260px;
+  width: 100%;
+  margin-left: 17px; }
+  .information_blue_kit span, .information_pro_kit span {
+    font-size: 0.8em;
+    font-family: "Roboto", sans-serif;
+    margin-left: 7px; }
+  .information_blue_kit ul, .information_pro_kit ul {
+    margin-top: 6px; }
+    .information_blue_kit ul li, .information_pro_kit ul li {
+      font-size: 1em;
+      font-family: "Roboto", sans-serif;
+      position: relative;
+      padding-left: 10px;
+      line-height: 18px; }
+      .information_blue_kit ul li:before, .information_pro_kit ul li:before {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        border-radius: 4px;
+        background: #333333;
+        left: 1px;
+        top: 40%; }
+
+.information_pro_kit li:last-child:before {
+  top: 16%; }
+
+.second_hair_kits {
+  background: #f8ece6;
+  border: 4px solid #e1bfaf;
+  overflow: hidden;
+  transition: 450ms ease 0s;
+  margin-right: 0px;
+  position: relative; }
+  .second_hair_kits:hover {
+    border: 4px solid #cead9e;
+    background: #f5d8ca; }
+  .second_hair_kits a {
+    display: block; }
+  .second_hair_kits h3 {
+    color: #c4622e;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 4px; }
+
+.img_pro_kit {
+  float: right;
+  padding-top: 17px;
+  padding-right: 20px; }
+  .img_pro_kit img {
+    width: 65px; }
+
+.promo_text {
+  position: absolute;
+  right: -55px;
+  bottom: 8px;
+  width: 155px;
+  height: 36px;
+  line-height: 1;
+  color: #fff;
+  padding: 9px;
+  font-size: 0.7em;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background: #ca7b68;
+  background: -moz-linear-gradient(left, #ca7b68 0%, #ac6958 100%);
+  background: -webkit-linear-gradient(left, #ca7b68 0%, #ac6958 100%);
+  background: -o-linear-gradient(left, #ca7b68 0%, #ac6958 100%);
+  background: -ms-linear-gradient(left, #ca7b68 0%, #ac6958 100%);
+  background: linear-gradient(to right, #ca7b68 0%, #ac6958 100%); }
+
+/*end other hair kits */
+/*advantage_statistics */
+.advantage_statistics {
+  padding-top: 12px;
+  padding-bottom: 7px;
+  position: relative; }
+  .advantage_statistics:after {
+    content: "";
+    width: 95%;
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0;
+    background: #eee;
+    margin: auto; }
+  .advantage_statistics h2 {
+    text-transform: uppercase;
+    font-family: "Futura-Bold", sans-serif;
+    font-size: 1.7em;
+    letter-spacing: 0.01em;
+    margin-bottom: 35px; }
+  .advantage_statistics .percent {
+    float: right;
+    font-family: "Futura-Book", sans-serif;
+    font-size: 1.3em;
+    margin-left: 10px; }
+  .advantage_statistics .addition {
+    font-family: "Futura-Book", sans-serif;
+    font-size: 1.1em;
+    padding-left: 0px;
+    padding-right: 48px;
+    margin-top: 2px;
+    line-height: 19px; }
+    .advantage_statistics .addition span {
+      font-family: "Futura-Bold", sans-serif; }
+
+.statistics_item {
+  margin-bottom: 16px; }
+  .statistics_item p {
+    font-family: "Futura-Book", sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 6px; }
+
+.statistics_left_side {
+  padding-left: 0px; }
+
+.advantage_statistics .progress {
+  width: 320px;
+  display: inline-block; }
+
+.statistics_progress {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center; }
+
+.statistics_right_side {
+  padding-left: 0; }
+
+/*end advantage_statistics */
+/*video part */
+.video_part {
+  padding-top: 27px;
+  padding-bottom: 25px;
+  position: relative; }
+  .video_part:after {
+    content: "";
+    width: 95%;
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0;
+    background: #eee;
+    margin: auto; }
+
+.right_video iframe, .left_video iframe {
+  width: 100%;
+  height: 214px;
+  border: 0; }
+
+/*end video part */
+/*three steps */
+.three_steps {
+  padding-top: 57px;
+  padding-bottom: 30px;
+  position: relative; }
+  .three_steps:after {
+    content: "";
+    width: 95%;
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0;
+    background: #eee;
+    margin: auto; }
+  .three_steps .step1 p, .three_steps .step2 p, .three_steps .step3 p {
+    text-align: center;
+    font-family: "Futura-Book", sans-serif;
+    font-size: 1.2em;
+    padding-top: 20px;
+    padding-left: 10px; }
+  .three_steps .step1 span, .three_steps .step2 span, .three_steps .step3 span {
+    font-family: "Futura-Bold", sans-serif;
+    font-size: 1em; }
+  .three_steps .step1 {
+    text-align: center; }
+  .three_steps .step2 {
+    padding-left: 95px; }
+  .three_steps .step3 {
+    padding-left: 106px; }
+  .three_steps .additional_text {
+    text-align: center;
+    font-family: "Futura-Book", sans-serif;
+    font-size: 1.2em;
+    padding-top: 20px; }
+    .three_steps .additional_text span {
+      font-family: "Futura-Bold", sans-serif;
+      font-size: 1em; }
+
+/*end three steps */
+/*our promise */
+.our_promise {
+  padding-top: 23px;
+  padding-bottom: 96px; }
+  .our_promise .left_side {
+    margin-right: 45px; }
+
+.promise .promise_text {
+  padding-left: 9px;
+  padding-right: 24px;
+  font-family: "Futura-Book", sans-serif;
+  font-size: 1.15em;
+  margin-bottom: 30px; }
+.promise ul {
+  padding-left: 0px; }
+  .promise ul li {
+    line-height: 27px; }
+  .promise ul p {
+    text-transform: uppercase;
+    font-family: "Futura-Book", sans-serif;
+    font-size: 1.15em;
+    display: inline-block;
+    margin-left: 21px; }
+.promise img {
+  width: 30px; }
+
+/*end our promise */
+/*footer */
+footer {
+  width: 100%;
+  background: #e6e6e6;
+  height: 55px;
+  position: fixed;
+  bottom: 0;
+  display: none; }
+  footer img {
+    width: 73px;
+    float: left;
+    margin-top: -38px; }
+
+.footer {
+  max-width: 580px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100%; }
+  .footer .text_about_product {
+    float: left;
+    margin-left: 25px; }
+    .footer .text_about_product h3 {
+      font-family: "Futura-Bold", sans-serif;
+      font-size: 1.3em;
+      margin: 0;
+      margin-top: 2px;
+      text-align: left;
+      color: #000; }
+    .footer .text_about_product .new_price {
+      font-size: 1.6em; }
+    .footer .text_about_product .additional_text {
+      color: #000;
+      font-size: 0.88em;
+      margin-left: 11px;
+      margin-top: 8px;
+      font-family: "Roboto", sans-serif;
+      display: inline-block; }
+  .footer .footer_btn {
+    outline: none;
+    background: #ea3445;
+    color: #ffffff;
+    width: 118px;
+    height: 34px;
+    margin-top: 14px;
+    margin-left: 7px;
+    border-radius: 23px;
+    border: none;
+    font-family: "Futura-Bold", sans-serif;
+    font-size: 1.1em;
+    transition: 450ms ease 0s; }
+    .footer .footer_btn:hover {
+      background: #cd4552; }
+
+/*end footer */
+.modal-dialog {
+  width: 90%;
+  max-width: 1400px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  height: 100%;
+  margin: 0 auto; }
+
+.modal-content {
+  width: 100%; }
+
+@media (min-height: 1800px) {
+  footer {
+    display: block !important; } }
+@media (max-height: 700px) {
+  .modal-dialog {
+    display: block;
+    margin-top: 30px; } }
+@media(max-width: 1200px) {
+  .call_order {
+    display: none; } }
+@media(max-width: 991px) {
+  body {
+    font-size: 13px; }
+
+  .special-offer {
+    height: auto;
+    padding: 0 5%;
+    padding-bottom: 20px; }
+    .special-offer .sp-offer {
+      display: block;
+      height: auto; }
+      .special-offer .sp-offer p {
+        display: block;
+        margin-bottom: 0;
+        margin-right: 0;
+        padding-top: 15px;
+        padding-bottom: 15px; }
+
+  .special-offer input {
+    width: 250px; }
+
+  .three_steps .step2, .three_steps .step3 {
+    padding-left: 15px;
+    text-align: center; }
+
+  .three_steps .step1 p, .three_steps .step2 p, .three_steps .step3 p {
+    padding-left: 16px; } }
+@media(max-width: 850px) {
+  .information_blue_kit, .information_pro_kit {
+    max-width: 238px; }
+
+  .item_description, .other_hair_kits, .advantage_statistics, .video_part, .three_steps, .our_promise {
+    max-width: 770px; } }
+@media(max-width: 780px) {
+  .information_blue_kit ul li, .information_pro_kit ul li {
+    font-size: 0.88em; }
+
+  .information_blue_kit, .information_pro_kit {
+    max-width: 216px; }
+
+  .second_hair_kits {
+    margin-top: 0; } }
+@media(max-width: 767px) {
+  .container-fluid {
+    padding: 0 5%; }
+
+  .header {
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end; }
+
+  .header_logo {
+    position: absolute;
+    order: 1;
+    -webkit-order: 1;
+    margin: 0;
+    margin-left: 17px; }
+
+  .call_login {
+    order: 2;
+    -webkit-order: 2;
+    margin-right: 0px; }
+
+  .header:before {
+    width: 94%;
+    right: auto; }
+
+  nav {
+    order: 3;
+    -webkit-order: 3;
+    width: auto;
+    margin-right: 20px; }
+
+  .mobile_call {
+    display: flex;
+    display: -webkit-flex;
+    order: 4;
+    -webkit-order: 4;
+    width: 55px;
+    height: 55px;
+    background: #ff8106;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center; }
+    .mobile_call .fa {
+      color: #fff;
+      font-size: 1.7em; }
+
+  .header_menu .fa-navicon {
+    font-size: 1.7em; }
+
+  .basket_header {
+    margin-top: 0; }
+
+  .call_login a {
+    display: none; }
+
+  header.container-fluid {
+    padding-right: 0; }
+
+  .product_description {
+    padding-bottom: 35px; }
+
+  .show_old_price {
+    width: 109px; }
+
+  .call_login span, .call_login .login, .header_menu span {
+    display: none; }
+
+  .basket_count span {
+    display: inline-block; }
+
+  .slider {
+    padding-left: 0; }
+
+  .clinically_proven {
+    left: 0px; }
+
+  .zoom_text {
+    display: block;
+    text-transform: uppercase;
+    font-family: "Futura-Bold", sans-serif;
+    color: #9f9f9f;
+    font-size: 1em;
+    margin-left: 8px;
+    margin-top: 3px; }
+
+  #slider_zoom {
+    bottom: -28px;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center; }
+    #slider_zoom img {
+      align-self: center;
+      -webkit-align-self: center; }
+
+  .previews {
+    display: none; }
+
+  .second_hair_kits {
+    margin-top: 15px;
+    margin-bottom: 25px; }
+
+  .information_blue_kit span, .information_pro_kit span {
+    font-size: 0.85em; }
+
+  .statistics_right_side {
+    padding-left: 0px; }
+
+  .advantage_statistics .addition {
+    padding-right: 0;
+    padding-bottom: 20px; }
+
+  .left_video {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+  .right_video {
+    margin-bottom: 25px; }
+
+  .three_steps {
+    padding-top: 35px;
+    padding-bottom: 25px; }
+    .three_steps .step1, .three_steps .step2 {
+      margin-bottom: 30px; }
+
+  .our_promise {
+    padding-top: 23px;
+    padding-bottom: 90px; }
+
+  .item_description .right_side_description {
+    padding-left: 0; }
+
+  .footer {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center; }
+
+  .text_about_product div {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center; }
+
+  .footer .text_about_product .new_price {
+    margin: 0; } }
+@media(max-width: 600px) {
+  .special-offer .sp-offer {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column; }
+
+  #emailBtn {
+    width: 250px;
+    margin: 0;
+    margin-top: 20px; }
+
+  .special-offer input {
+    margin-right: 0; }
+
+  .full img {
+    width: 163px;
+    height: 211px; }
+
+  .zoom_text {
+    font-size: 0.9em; }
+
+  .show_old_price {
+    width: auto; }
+
+  .footer {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center; }
+
+  .additional_text span {
+    display: none; }
+
+  .text_about_product div {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center; }
+
+  .footer .text_about_product .new_price {
+    margin-bottom: 0; }
+
+  .footer .text_about_product .additional_text {
+    margin-bottom: 0;
+    margin-top: 0; } }
+@media(max-width: 450px) {
+  .full img {
+    width: 112px;
+    height: 143px; }
+
+  .clinically_proven {
+    top: 25px;
+    left: -7px; }
+    .clinically_proven img {
+      width: 40px; }
+
+  .header_logo {
+    top: 15px; }
+    .header_logo img {
+      width: 120px; }
+
+  #slider_zoom {
+    bottom: -43px; }
+
+  .item_description .right_side_description .reviews {
+    font-size: 0.85em; }
+
+  .show_old_price {
+    margin-left: 6px;
+    margin-right: 0; }
+
+  .information_blue_kit ul li:before, .information_pro_kit ul li:before {
+    top: 6px; }
+
+  .information_blue_kit, .information_pro_kit {
+    max-width: 171px; }
+
+  .img_blue_kit {
+    padding-top: 60px; }
+
+  .carousel-control.left, .carousel-control.right {
+    margin-top: 52%; }
+
+  .carousel-control.left {
+    margin-left: -11px; }
+
+  .carousel-control.right {
+    margin-right: -7px; }
+
+  footer img {
+    width: 60px;
+    height: 76px;
+    margin-top: -17px; }
+
+  .footer .text_about_product {
+    margin-left: 9px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: center;
+    -webkit-justify-content: center; }
+    .footer .text_about_product h3 {
+      font-size: 1.1em; }
+
+  .footer .text_about_product .new_price {
+    font-size: 1.3em; }
+
+  footer {
+    height: 60px; }
+
+  .footer {
+    width: 95%; }
+
+  .footer .text_about_product .additional_text {
+    margin-left: 2px; }
+
+  .footer .footer_btn {
+    font-size: 1em; } }
+
+/*# sourceMappingURL=style.css.map */
